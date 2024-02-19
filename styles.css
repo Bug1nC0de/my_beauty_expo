@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'sans-serif';
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+/* Header CSS */
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/home_header_img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#visit-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/header_visit.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#exhibit-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/exhibit-header-image.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#sponsor-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/sponsor-header_img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#competition-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/competition-header-img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Page containers */
+.container {
+  padding: 10px 5%;
+}
+
+/* Page Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Nav CSS */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #08080877;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+nav img {
+  width: 11%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #691769;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Header CSS */
+.header-container {
+  display: inline-block;
+  justify-content: right;
+  text-align: center;
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Page Header Text */
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text span {
+  color: #691769;
+}
+
+/* Main Booking Butto*/
+
+.header-button {
+  align-items: right;
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+.main-book-now-button {
+  background-color: #691769;
+  font-size: 30px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+#main_countdown li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+#main_countdown li span {
+  color: #fff;
+}
+
+/* Home Page CSS */
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.about-text {
+  text-align: center;
+}
+.adout-col-1 {
+  flex-basis: 30%;
+}
+
+.about-col-1 img {
+  width: 80%;
+  height: 80%;
+}
+
+#about-extra {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#about-extra i {
+  margin-top: 55px;
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+
+#about-extra h3 {
+  margin-bottom: 10px;
+}
+
+/* Bottom book now */
+.book-now {
+  display: flex;
+  justify-content: center;
+  background-image: url(images/durban_icc_crop.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#countdown li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#countdown li span {
+  display: block;
+}
+
+.booking-text {
+  margin-top: 15%;
+  margin-bottom: 13%;
+  padding: 1rem;
+  background-color: rgba(74, 74, 74, 0.538);
+  border-radius: 10%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.booking-text span {
+  color: white;
+}
+
+.booking-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.book-now-button {
+  background-color: #691769;
+  margin-top: 20px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Global Footer CSS */
+.footer {
+  background-color: white;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Visit Page CSS */
+.visit-header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.visit-header-text p {
+  margin-bottom: 20px;
+}
+
+.visit-expo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.why-visit-col-1 {
+  flex-basis: 40%;
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: #ababab;
+}
+
+.why-visit-col-2 {
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: #ababab;
+}
+
+.who-should-visit {
+  margin-bottom: 20px;
+}
+
+.who-should-visit-text {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.who-should-visit-col-1 {
+  flex-basis: 45%;
+}
+
+.who-should-visit-col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.who-should-visit-list-1 {
+  margin-right: 40px;
+}
+
+.who-should-visit-list-1 li {
+  padding: 0.3rem;
+}
+
+.who-should-visit-list-2 li {
+  padding: 0.3rem;
+}
+
+hr {
+  width: 30%;
+  margin: auto;
+}
+
+/* Exhibit Page CSS */
+
+.exhibit-header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.exhibit-header-text p {
+  margin-bottom: 20px;
+}
+
+.why-exhibit-text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.exhibit-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#why-exhibit {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#why-exhibit h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+#why-exhibit li {
+  padding: 0.5rem;
+}
+
+#why-exhibit h1 {
+  margin-bottom: 20px;
+}
+
+.exhibit-cols {
+  margin-top: 20px;
+}
+
+#why-exhibit p {
+  margin-bottom: 20px;
+}
+
+/* Sponsor page css */
+.sponsor-header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+#sponsor-mbe {
+  margin-bottom: 20px;
+}
+
+.sponsor-mbe-text {
+  font-size: 60px;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.sponsor-col-1 {
+  flex-basis: 45%;
+}
+.sponsor-col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor-col-2 {
+  flex-basis: 50%;
+}
+
+.sponsor-col-2 li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.sponsor-col-2 h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.sponsor-col-2 h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: purple;
+}
+
+.sponsor-col-2 p {
+  margin-bottom: 10px;
+}
+
+.sponsor-col-2 span {
+  color: #ababab;
+  font-weight: bolder;
+}
+
+.sponsor-mbe-paragraph {
+  padding: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.sponsor-mbe-paragraph ul {
+  margin-top: 20px;
+  text-align: left;
+  list-style: none;
+  line-height: 3rem;
+  padding: 10px 10% 10px 10%;
+}
+
+.sponsor-mbe-paragraph p {
+  margin-bottom: 60px;
+}
+
+.sponsor-mbe-par-cols {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.sponsor-mbe-par-cols i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.col-num {
+  font-size: 60px;
+  margin-bottom: 80px;
+}
+
+/*Competition CSS */
+.competition-header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+#battle-of-the-barbers {
+  margin-bottom: 30px;
+}
+
+.barber-battle-col-1 {
+  flex-basis: 50%;
+}
+
+.barber-battle-col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.barber-battle-col-2 {
+  flex-basis: 40%;
+}
+
+.make-up-competition-col-1 {
+  flex: 50%;
+}
+
+.make-up-competition-col-2 {
+  flex-basis: 40%;
+}
+
+.make-up-competition-col-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.barber-button {
+  background-color: #7f5738;
+  margin-top: 20px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+#battle-of-the-barbers h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#battle-of-the-barbers p {
+  color: #ababab;
+  margin-bottom: 20px;
+}
+
+#make-up-competition {
+  margin-left: 30px;
+}
+
+#make-up-competition h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#make-up-competition p {
+  color: #ababab;
+  margin-bottom: 20px;
+}
+
+.make-up-button {
+  background-color: #b8860b;
+  margin-top: 20px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
