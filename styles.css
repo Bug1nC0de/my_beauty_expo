@@ -168,14 +168,10 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-  text-align: center;
   margin-bottom: 30px;
   color: white;
 }
 
-.about-text {
-  text-align: center;
-}
 .adout-col-1 {
   flex-basis: 30%;
 }
@@ -282,7 +278,6 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  text-align: center;
 }
 
 .why-visit-col-1 {
@@ -321,10 +316,12 @@ nav ul li a:hover::after {
 }
 
 .who-should-visit-list-1 li {
+  list-style: none;
   padding: 0.3rem;
 }
 
 .who-should-visit-list-2 li {
+  list-style: none;
   padding: 0.3rem;
 }
 
@@ -372,6 +369,7 @@ hr {
 }
 
 #why-exhibit li {
+  list-style: none;
   padding: 0.5rem;
 }
 
