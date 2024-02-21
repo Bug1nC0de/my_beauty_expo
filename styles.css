@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/scriptina');
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #080808;
+  background: white;
   color: #fff;
 }
 
@@ -33,7 +33,7 @@ body {
 #exhibit-header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/exhibit-header-image.jpeg);
+  background-image: url(images/sponsor-header_img.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -41,7 +41,7 @@ body {
 #sponsor-header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/sponsor-header_img.jpeg);
+  background-image: url(images/exhibit-header-image.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -70,6 +70,14 @@ body {
   background-position: center;
 }
 
+#booking-header {
+  width: 100%;
+  height: 60vh;
+  background-image: url(images/shop-mbe-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 /*Page containers */
 .container {
   padding: 10px 5%;
@@ -88,6 +96,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  float: right;
   flex-wrap: wrap;
   background-color: #08080877;
   padding: 1rem;
@@ -102,6 +111,7 @@ nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+  position: relative;
 }
 
 nav ul li a {
@@ -127,14 +137,14 @@ nav ul li a:hover::after {
 
 /* Header CSS */
 .header-container {
-  display: inline-block;
-  justify-content: right;
+  display: flex;
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
 
 .header-text {
-  margin-top: 10%;
+  margin-top: 25%;
   font-size: 30px;
   font-weight: bold;
 }
@@ -142,20 +152,23 @@ nav ul li a:hover::after {
 /* Page Header Text */
 .header-text h1 {
   font-size: 60px;
-  margin-top: 20px;
+  font-weight: 600;
+  text-shadow: #000 1px 0 10px;
 }
 
-.header-text span {
-  color: #691769;
+.header-text h5 {
+  text-shadow: #000 1px 0 10px;
+  margin-bottom: 8px;
 }
-
-/* Main Booking Butto*/
-
-.header-button {
-  align-items: right;
-  margin-top: 10%;
-  margin-right: 10%;
+#expo-text {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  margin-right: 23%;
+  margin-bottom: -45px;
+  text-align: right;
+  text-shadow: #fcfcfc 1px 0 10px;
 }
+/* Main Booking Button*/
 
 .main-book-now-button {
   background-color: #691769;
@@ -164,6 +177,7 @@ nav ul li a:hover::after {
   border-color: white;
   border-radius: 10px;
   padding: 10px 70px;
+  margin-top: 20px;
 }
 
 #main_countdown li {
@@ -171,21 +185,17 @@ nav ul li a:hover::after {
   list-style-type: none;
   font-size: 30px;
   padding: 1rem;
-}
-
-#main_countdown li span {
-  color: #fff;
+  background-color: #691769c7;
 }
 
 /* Home Page CSS */
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: black;
 }
 
 .sub-title {
-  margin-bottom: 30px;
-  color: white;
+  margin-bottom: 10px;
 }
 
 .adout-col-1 {
@@ -193,16 +203,26 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-  width: 80%;
-  height: 80%;
+  height: 50%;
+  width: 20%;
+}
+
+.about-col-2 {
+  flex-basis: 70%;
 }
 
 #about-extra {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
+.age {
+  margin-right: 20px;
+}
+.reserved {
+  margin-right: 20px;
+}
 #about-extra i {
   margin-top: 55px;
   margin-bottom: 20px;
@@ -229,6 +249,7 @@ nav ul li a:hover::after {
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
+  text-shadow: #000 1px 0 10px;
 }
 
 #countdown li span {
@@ -236,8 +257,8 @@ nav ul li a:hover::after {
 }
 
 .booking-text {
-  margin-top: 15%;
-  margin-bottom: 13%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 1rem;
   background-color: rgba(74, 74, 74, 0.538);
   border-radius: 10%;
@@ -246,24 +267,36 @@ nav ul li a:hover::after {
   font-weight: bold;
 }
 
-.booking-text span {
-  color: white;
+#bottom-expo-text {
+  font-family: 'Scriptina';
+  font-size: 70px;
+  font-weight: 700;
+  margin-right: 24%;
+  margin-bottom: -45px;
+  text-align: right;
+  text-shadow: #fcfcfc 1px 0 10px;
 }
 
 .booking-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.booking-text h5 {
+  text-shadow: #000 1px 0 10px;
 }
 
 .book-now-button {
   background-color: #691769;
   margin-top: 20px;
-  width: 250px;
-  height: 50px;
+  width: 350px;
+  height: 60px;
   color: white;
   font-size: 20px;
-  border: none;
   border-radius: 10px;
+  border-color: #fff;
 }
 
 /* Global Footer CSS */
@@ -279,14 +312,28 @@ nav ul li a:hover::after {
 
 /* Visit Page CSS */
 .visit-header-text {
-  margin-top: 10%;
+  margin-top: 24%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
 }
 
-.visit-header-text p {
+.visit-header-text h1 {
   margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.visit-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+.visit-header-text p {
+  margin-bottom: 30px;
 }
 
 .visit-expo {
@@ -300,13 +347,13 @@ nav ul li a:hover::after {
   flex-basis: 40%;
   padding: 1rem;
   line-height: 1.5rem;
-  color: #ababab;
+  color: black;
 }
 
 .why-visit-col-2 {
   padding: 1rem;
   line-height: 1.5rem;
-  color: #ababab;
+  color: black;
 }
 
 .who-should-visit {
@@ -317,9 +364,17 @@ nav ul li a:hover::after {
   text-align: center;
   margin-bottom: 40px;
   font-size: 40px;
+  color: black;
 }
 .who-should-visit-col-1 {
   flex-basis: 45%;
+  text-align: center;
+}
+
+.who-should-visit-col-1 .quote {
+  color: #691769;
+  font-family: 'Scriptina';
+  font-size: 2rem;
 }
 
 .who-should-visit-col-1 img {
@@ -334,11 +389,13 @@ nav ul li a:hover::after {
 .who-should-visit-list-1 li {
   list-style: none;
   padding: 0.3rem;
+  color: black;
 }
 
 .who-should-visit-list-2 li {
   list-style: none;
   padding: 0.3rem;
+  color: black;
 }
 
 hr {
@@ -349,14 +406,23 @@ hr {
 /* Exhibit Page CSS */
 
 .exhibit-header-text {
-  margin-top: 10%;
+  margin-top: 28%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
 }
 
+.exhibit-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
 .exhibit-header-text p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .why-exhibit-text {
@@ -364,6 +430,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 50px;
+  color: black;
 }
 
 .exhibit-video {
@@ -377,6 +444,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  color: #000;
 }
 
 #why-exhibit h2 {
@@ -403,28 +471,52 @@ hr {
 
 /* Sponsor page css */
 .sponsor-header-text {
-  margin-top: 10%;
+  margin-top: 32%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
 }
 
-#sponsor-mbe {
-  margin-bottom: 20px;
+.sponsor-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
 }
 
 .sponsor-mbe-text {
   font-size: 60px;
   text-align: center;
-  margin: 5% auto;
+  color: #000;
+}
+
+.paragraph-col-1 {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.paragraph-col-2 {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+#sponsor-dash {
+  font-family: 'Scriptina';
+  font-size: 30px;
+  color: #691769;
+  text-shadow: #000000a5 1px 0 10px;
+  margin: 50px 0px 50px 0px;
 }
 
 .sponsor-col-1 {
-  flex-basis: 45%;
+  flex-basis: 50%;
 }
 .sponsor-col-1 img {
   width: 100%;
   height: 100%;
+  padding: 1rem;
 }
 
 .sponsor-col-2 {
@@ -434,21 +526,22 @@ hr {
 .sponsor-col-2 li {
   list-style-type: none;
   padding: 0.5rem;
+  color: black;
 }
 
 .sponsor-col-2 h1 {
   font-size: 30px;
   margin-bottom: 15px;
+  color: #000;
 }
 
-.sponsor-col-2 h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: purple;
-}
-
-.sponsor-col-2 p {
-  margin-bottom: 10px;
+.sponsor-col-1 p {
+  font-family: 'Scriptina';
+  font-size: 25px;
+  text-align: center;
+  margin: -100px 0px 20px 0px;
+  color: #691769;
+  text-shadow: #000 1px 0 10px;
 }
 
 .sponsor-col-2 span {
@@ -460,30 +553,29 @@ hr {
   padding: 2rem;
   line-height: 2rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  color: #000;
 }
 
 .sponsor-mbe-paragraph ul {
-  margin-top: 20px;
   text-align: left;
   list-style: none;
   line-height: 3rem;
-  padding: 10px 10% 10px 10%;
 }
 
 .sponsor-mbe-paragraph p {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .sponsor-mbe-par-cols {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .sponsor-mbe-par-cols i {
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .col-num {
   font-size: 60px;
@@ -492,10 +584,19 @@ hr {
 
 /*Competition CSS */
 .competition-header-text {
-  margin-top: 10%;
+  margin-top: 30%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
+}
+
+.competition-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
 }
 
 #battle-of-the-barbers {
@@ -513,10 +614,12 @@ hr {
 
 .barber-battle-col-2 {
   flex-basis: 40%;
+  color: black;
 }
 
 .make-up-competition-col-1 {
   flex: 50%;
+  color: #000;
 }
 
 .make-up-competition-col-2 {
@@ -529,7 +632,7 @@ hr {
 }
 
 .barber-button {
-  background-color: #7f5738;
+  background-color: #691769;
   margin-top: 20px;
   padding: 1.5rem;
   color: white;
@@ -564,7 +667,7 @@ hr {
 }
 
 .make-up-button {
-  background-color: #b8860b;
+  background-color: #691769;
   margin-top: 20px;
   padding: 1.5rem;
   color: white;
@@ -575,30 +678,40 @@ hr {
 
 /* Golf Day CSS */
 .golf-day-header-text {
-  margin-top: 10%;
+  margin-top: 30%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
 }
 
+.golf-day-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
 #golf-day-display p {
-  line-height: 1rem;
-  color: #ababab;
-  margin-bottom: 20px;
+  color: #000;
+  padding: 1rem;
 }
 
 .golf-day-title-text {
   margin: 20px 0px 30px 0px;
   font-size: 30px;
   text-align: center;
+  color: #000;
 }
 
 .golf-day-display-col-1 {
   flex-basis: 50%;
+  color: black;
 }
 
 .golf-day-display-col-2 {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 .golf-day-display-col-2 img {
@@ -606,19 +719,14 @@ hr {
   height: 100%;
 }
 
-.golf-day-display-col-1 h1 {
-  margin-bottom: 20px;
-}
-
 .golf-day-display-col-1 ul {
-  margin-bottom: 20px;
   list-style: none;
   line-height: 2.2rem;
 }
 
 .golf-day-slot-button {
-  background-color: grey;
-  margin-top: 20px;
+  background-color: #691769;
+  margin-top: 5px;
   padding: 1.5rem;
   color: white;
   font-size: 20px;
@@ -629,15 +737,32 @@ hr {
 
 /*Contact page CSS */
 .contact-header-text {
-  margin-top: 10%;
+  margin-top: 20%;
   font-size: 30px;
   text-align: center;
   line-height: 2.5rem;
 }
 
+.contact-header-text h1 {
+  margin-bottom: 5px;
+}
+
+.contact-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
 #contact-info {
   margin: 20px 0px 20px 0px;
   color: #ababab;
+}
+
+#contact-info h1 {
+  color: #000;
 }
 
 #contact-info ul {
@@ -648,7 +773,7 @@ hr {
 #contact-info ul span i {
   font-size: 20px;
   margin-right: 2%;
-  color: white;
+  color: black;
 }
 
 #contact-info ul i {
@@ -684,6 +809,71 @@ textarea {
 }
 
 form button {
+  margin-top: 20px;
+  background-color: #691769;
+  font-size: 18px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+/* Booking page CSS */
+.booking-header-text {
+  margin-top: 20%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.booking-header-text h1 {
+  margin-bottom: 10px;
+}
+
+.booking-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+#booking-info h3 {
+  text-align: center;
+  margin: 10px 20px 5px 20px;
+  color: #000;
+}
+
+#booking-info h2 {
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-family: 'Scriptina';
+  text-shadow: #691769 1px 0 10px;
+}
+
+.booking-info-col-1 {
+  text-align: left;
+  flex-basis: 50%;
+  color: #000;
+}
+.booking-info-col-2 {
+  text-align: left;
+  flex-basis: 50%;
+  color: #000;
+}
+
+.general-booking-button {
+  margin-top: 20px;
+  background-color: #691769;
+  font-size: 18px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+.vip-booking-button {
   margin-top: 20px;
   background-color: #691769;
   font-size: 18px;
