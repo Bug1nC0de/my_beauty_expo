@@ -1,0 +1,1427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/scriptina');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: #fff;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.a4 {
+    margin: 0 15%;
+}
+
+
+
+/* Header CSS */
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/home_header_img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#visit-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/header_visit.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#exhibit-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/sponsor-header_img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#sponsor-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/exhibit-header-image.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#competition-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/competition-header-img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#golf-day-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/golf-day-header.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(images/contact-header.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#booking-header {
+  width: 100%;
+  height: 60vh;
+  background-image: url(images/shop-mbe-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Page containers */
+.container {
+  padding: 10px 5%;
+}
+
+/* Page Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Nav CSS */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  flex-wrap: wrap;
+  background-color: #08080877;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+nav img {
+  width: 11%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #691769;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Header CSS */
+.header-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 25%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Page Header Text */
+.header-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-shadow: #000 1px 0 10px;
+}
+
+.header-text h5 {
+  text-shadow: #000 1px 0 10px;
+  margin-bottom: 8px;
+}
+#expo-text {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  margin-right: 23%;
+  margin-bottom: -45px;
+  text-align: right;
+  text-shadow: #fcfcfc 1px 0 10px;
+}
+/* Main Booking Button*/
+
+.main-book-now-button {
+  background-color: #691769;
+  font-size: 30px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+  margin-top: 20px;
+}
+
+#main_countdown li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 1rem;
+  background-color: #691769c7;
+}
+
+/* Home Page CSS */
+#about {
+  padding: 80px 0;
+  color: black;
+}
+
+.sub-title {
+  margin-bottom: 10px;
+}
+
+.adout-col-1 {
+  flex-basis: 30%;
+}
+
+.about-col-1 img {
+  height: 50%;
+  width: 20%;
+}
+
+.about-col-2 {
+  flex-basis: 70%;
+}
+
+#about-extra {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.age {
+  margin-right: 20px;
+}
+.reserved {
+  margin-right: 20px;
+}
+#about-extra i {
+  margin-top: 55px;
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+
+#about-extra h3 {
+  margin-bottom: 10px;
+}
+
+/* Bottom book now */
+.book-now {
+  display: flex;
+  justify-content: center;
+  background-image: url(images/durban_icc_crop.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#countdown li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  text-shadow: #000 1px 0 10px;
+}
+
+#countdown li span {
+  display: block;
+}
+
+.booking-text {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 1rem;
+  background-color: rgba(74, 74, 74, 0.538);
+  border-radius: 10%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#bottom-expo-text {
+  font-family: 'Scriptina';
+  font-size: 70px;
+  font-weight: 700;
+  margin-right: 24%;
+  margin-bottom: -45px;
+  text-align: right;
+  text-shadow: #fcfcfc 1px 0 10px;
+}
+
+.booking-text h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.booking-text h5 {
+  text-shadow: #000 1px 0 10px;
+}
+
+.book-now-button {
+  background-color: #691769;
+  margin-top: 20px;
+  width: 350px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: #fff;
+}
+
+/* Global Footer CSS */
+.footer {
+  background-color: white;
+  color: black;
+}
+
+.footer-1 {
+    background-color: darkblue;
+    color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Visit Page CSS */
+.visit-header-text {
+  margin-top: 24%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.visit-header-text h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.visit-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+.visit-header-text p {
+  margin-bottom: 30px;
+}
+
+.visit-expo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.why-visit-col-1 {
+  flex-basis: 40%;
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.why-visit-col-2 {
+  padding: 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.who-should-visit {
+  margin-bottom: 20px;
+}
+
+.who-should-visit-text {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: black;
+}
+.who-should-visit-col-1 {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.who-should-visit-col-1 .quote {
+  color: #691769;
+  font-family: 'Scriptina';
+  font-size: 2rem;
+}
+
+.who-should-visit-col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.who-should-visit-list-1 {
+  margin-right: 40px;
+}
+
+.who-should-visit-list-1 li {
+  list-style: none;
+  padding: 0.3rem;
+  color: black;
+}
+
+.who-should-visit-list-2 li {
+  list-style: none;
+  padding: 0.3rem;
+  color: black;
+}
+
+hr {
+  width: 30%;
+  margin: auto;
+}
+
+/* Exhibit Page CSS */
+
+.exhibit-header-text {
+  margin-top: 28%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.exhibit-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+.exhibit-header-text p {
+  margin-bottom: 10px;
+}
+
+.why-exhibit-text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: black;
+}
+
+.exhibit-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#why-exhibit {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+#why-exhibit h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+#why-exhibit li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+#why-exhibit h1 {
+  margin-bottom: 20px;
+}
+
+.exhibit-cols {
+  margin-top: 20px;
+}
+
+#why-exhibit p {
+  margin-bottom: 20px;
+}
+
+/* Sponsor page css */
+.sponsor-header-text {
+  margin-top: 32%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.sponsor-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+.sponsor-mbe-text {
+  font-size: 60px;
+  text-align: center;
+  color: #000;
+}
+
+.paragraph-col-1 {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.paragraph-col-2 {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+#sponsor-dash {
+  font-family: 'Scriptina';
+  font-size: 30px;
+  color: #691769;
+  text-shadow: #000000a5 1px 0 10px;
+  margin: 50px 0px 50px 0px;
+}
+
+.sponsor-col-1 {
+  flex-basis: 50%;
+}
+.sponsor-col-1 img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.sponsor-col-2 {
+  flex-basis: 50%;
+}
+
+.sponsor-col-2 li {
+  list-style-type: none;
+  padding: 0.5rem;
+  color: black;
+}
+
+.sponsor-col-2 h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.sponsor-col-1 p {
+  font-family: 'Scriptina';
+  font-size: 25px;
+  text-align: center;
+  margin: -100px 0px 20px 0px;
+  color: #691769;
+  text-shadow: #000 1px 0 10px;
+}
+
+.sponsor-col-2 span {
+  color: #ababab;
+  font-weight: bolder;
+}
+
+.sponsor-mbe-paragraph {
+  padding: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.sponsor-mbe-paragraph ul {
+  text-align: left;
+  list-style: none;
+  line-height: 3rem;
+}
+
+.sponsor-mbe-paragraph p {
+  margin-bottom: 10px;
+}
+
+.sponsor-mbe-par-cols {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.sponsor-mbe-par-cols i {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.col-num {
+  font-size: 60px;
+  margin-bottom: 80px;
+}
+
+/*Competition CSS */
+.competition-header-text {
+  margin-top: 30%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.competition-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+#battle-of-the-barbers {
+  margin-bottom: 30px;
+}
+
+.barber-battle-col-1 {
+  flex-basis: 50%;
+}
+
+.barber-battle-col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.barber-battle-col-2 {
+  flex-basis: 40%;
+  color: black;
+}
+
+.make-up-competition-col-1 {
+  flex: 50%;
+  color: #000;
+}
+
+.make-up-competition-col-2 {
+  flex-basis: 40%;
+}
+
+.make-up-competition-col-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.barber-button {
+  background-color: #691769;
+  margin-top: 20px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+#battle-of-the-barbers h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#battle-of-the-barbers p {
+  color: #ababab;
+  margin-bottom: 20px;
+}
+
+.barber-competition-header-text {
+    color: black;
+    margin-top: 30%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+
+#make-up-competition {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#make-up-competition h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#make-up-competition p {
+  color: #ababab;
+  margin-bottom: 20px;
+}
+
+.make-up-button {
+  background-color: #691769;
+  margin-top: 20px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+/* BARBER COMPETITION CSS */
+
+.barber-header {
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.5rem;
+    color: black;
+}
+
+.categories {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    font-size: 25px;
+    color: black;
+}
+
+.text-box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.text-box1 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -7px;
+}
+.text-box2 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.text-box3 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.text-box4 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.text-box5 {
+    width: 152px;
+    height: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+
+.min {
+    width: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.min1 {
+    width: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -7px;
+}
+.min2 {
+    width: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.min3 {
+    width: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.min4 {
+    width: 150px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+.min5 {
+    width: 152px;
+    border: 2px solid #000;
+    color: black;
+    display: inline-block;
+    margin-right: -6px;
+}
+
+.register {
+    margin-left: 27%;
+}
+
+.rules {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+
+.judges {
+    margin-bottom: 35px;
+}
+
+.point {
+    margin-left: 5%;
+}
+
+.list {
+    margin-bottom:3%
+}
+
+.link {
+    margin-bottom: 2%;
+}
+
+.programme {
+    margin-bottom: 1%;
+}
+
+.time {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time1 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time2 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time3 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time4 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time5 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time6 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+.time7 {
+    width: 25%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+}
+
+.categorie {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+    margin-top: -400px;
+}
+.categorie1 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie2 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie3 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie4 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie5 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie6 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+.categorie7 {
+    width: 45%;
+    height: 50px;
+    border: 2px solid #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 25%;
+}
+
+.information {
+    font-size: 25px;
+}
+
+
+/* Golf Day CSS */
+.golf-day-header-text {
+    margin-top: 30%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.golf-day-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+#golf-day-display p {
+  color: #000;
+  padding: 1rem;
+}
+
+.golf-day-title-text {
+  margin: 20px 0px 30px 0px;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.golf-day-display-col-1 {
+  flex-basis: 50%;
+  color: black;
+}
+
+.golf-day-display-col-2 {
+  flex-basis: 50%;
+}
+
+.golf-day-display-col-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.golf-day-display-col-1 ul {
+  list-style: none;
+  line-height: 2.2rem;
+}
+
+.golf-day-slot-button {
+  background-color: #691769;
+  margin-top: 5px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: white;
+}
+
+
+/* Golf Booking Form CSS */
+
+.golf-book-header-text {
+    margin-top: 0.5em;
+    margin-left: 4em;
+    margin-right: 11em;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.5rem;
+    color: black;
+}
+.golf-book-header-text p {
+    margin-top: 0.5em;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.5rem;
+    color: black;
+}
+
+.contact-golf-col-1 {
+    flex-basis: 50%;
+}
+
+.contact-golf-col-2 {
+    flex-basis: 50%;
+}
+
+.color {
+    color: darkblue;
+    font-size: 45px;
+}
+.color-1{
+    color: darkblue;
+    font-size: 30px;
+}
+
+.border {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.booking-form {
+    margin: 20px 0px 20px 0px;
+    color: black;
+}
+
+
+.label-left {
+    display: inline-block;
+    font-weight: 800;
+    word-wrap: break-word;
+    width: 35%;
+}
+
+.input-right {
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.input-left {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+.label-1 {
+    display: inline-block;
+    font-weight: 800;
+    word-wrap: break-word;
+}
+.label-2 {
+    font-weight: 800;
+    word-wrap: break-word;
+}
+.label-3 {
+    font-weight: 800;
+    word-wrap: break-word;
+    width: 27%;
+    display: inline-block;
+}
+
+.input-1 {
+    display: inline-block;
+    width: 20%;
+    margin-bottom: 15px;
+}
+.input-2 {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 15px;
+    flex-basis: 50%;
+}
+
+.input-message {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+
+.message-div {
+    min-width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.date-div {
+    min-width: 100%;
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+.ball-div {
+    min-width: 100%;
+    flex-basis: 50%;
+}
+.ball {
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.checkbox {
+    margin-bottom: 30px;
+}
+.checkbox-1 {
+    display: inline-block;
+    width: 50%;
+}
+.checkbox-2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 35px;
+}
+.checklabel {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.basket {
+    max-width: 45%;
+    min-width: 45%;
+    display: inline-block;
+}
+.banking {
+    max-width: 50%;
+    min-width: 50%;
+    display: inline-block;
+}
+
+.payments {
+    font-weight: 700;
+    margin-left: 130px;
+}
+.account {
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: large;
+    margin-left: 130px;
+}
+.account1 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: large;
+    margin-left: 130px;
+}
+.invoice {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: large;
+}
+
+/*Contact page CSS */
+.contact-header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.contact-header-text h1 {
+  margin-bottom: 5px;
+}
+
+.contact-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+#contact-info {
+  margin: 20px 0px 20px 0px;
+  color: #ababab;
+}
+
+#contact-info h1 {
+  color: #000;
+}
+
+#contact-info ul {
+  list-style: none;
+  line-height: 2rem;
+}
+
+#contact-info ul span i {
+  font-size: 20px;
+  margin-right: 2%;
+  color: black;
+}
+
+#contact-info ul i {
+  font-size: 50px;
+  margin: 20px 5px 20px 5px;
+}
+
+.contact-info-col-1 {
+  flex-basis: 50%;
+}
+.contact-info-col-2 {
+  flex-basis: 50%;
+}
+
+#facebook {
+  color: #1e90ff;
+}
+
+#instagram {
+  color: #691769;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 5rem;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #691769;
+  font-size: 18px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+/* Booking page CSS */
+.booking-header-text {
+  margin-top: 20%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.booking-header-text h1 {
+  margin-bottom: 10px;
+}
+
+.booking-header-text h5 {
+  font-family: 'Scriptina';
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #fcfcfc 1px 0 10px;
+  margin-bottom: 37px;
+  margin-left: 12%;
+}
+
+#booking-info h3 {
+  text-align: center;
+  margin: 10px 20px 5px 20px;
+  color: #000;
+}
+
+#booking-info h2 {
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-family: 'Scriptina';
+  text-shadow: #691769 1px 0 10px;
+}
+
+.booking-info-col-1 {
+  text-align: left;
+  flex-basis: 50%;
+  color: #000;
+}
+.booking-info-col-2 {
+  text-align: left;
+  flex-basis: 50%;
+  color: #000;
+}
+
+.general-booking-button {
+  margin-top: 20px;
+  background-color: #691769;
+  font-size: 18px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+.vip-booking-button {
+  margin-top: 20px;
+  background-color: #691769;
+  font-size: 18px;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .a4 {
+        margin: 0 1%;
+    }
+
+    /* Golf Booking Form CSS */
+
+    .golf-book-header-text {
+        margin-top: 0.5em;
+        margin-left: 4em;
+        margin-right: 2em;
+        font-size: 40px;
+        text-align: center;
+        line-height: 2.5rem;
+        color: black;
+    }
+
+    .golf-book-header-text p {
+        margin-top: 0.5em;
+        margin-right: 2em;
+        font-size: 15px;
+        text-align: center;
+        line-height: 2.5rem;
+        color: black;
+    }
+
+    .banking {
+        max-width: 100%;
+        min-width: 100%;
+        display: block;
+    }
+    .basket {
+        max-width: 100%;
+        min-width: 100%;
+        display: block;
+    }
+    .payments {
+        font-weight: 700;
+        margin-left: 0px;
+    }
+    .account {
+        margin-top: 25px;
+        margin-left: 0px;
+        font-weight: 800;
+        font-size: large;
+    }
+    .account1 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        font-weight: 800;
+        font-size: large;
+    }
+    .invoice {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        font-weight: 800;
+        font-size: large;
+    }
+
+    .footer-1 {
+        background-color: darkblue;
+        color: white;
+        margin-left: -5px;
+        margin-right: -45px;
+    }
+}
